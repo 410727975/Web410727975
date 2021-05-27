@@ -24,6 +24,7 @@ namespace Web410727975.Controllers
         }
         public ActionResult HW3()
         {
+            ViewBag.text = "Hello";
             return View();
         }
 
