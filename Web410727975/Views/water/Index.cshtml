@@ -8,11 +8,11 @@
 @using (Html.BeginForm("Index","water", FormMethod.Get)) { 
       <p>姓名：@Html.TextBox(name:"name")</p>
       <p>體重：@Html.TextBox(name: "weight")</p>
-        
-      
+    if (ViewBag.result != "")
+    {
           <p>Hi,@(ViewBag.name),您的建議喝水量是：@(ViewBag.result) cc</p>
-      
 
+    }
       <input type="submit" value="送出" />
 }
 
